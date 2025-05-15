@@ -1,14 +1,35 @@
 import React, { useContext } from 'react';
-
+import t from 'prop-types';
 import { GameContext } from '../contexts/GameContext';
 
 export default function Square({ value, index }) {
-  const { squares, setSquares } = useContext(GameContext);
+  const {
+    squares,
+    setSquares,
+    isXNext,
+    setIsXNext,
+    whoIsWinner,
+    history,
+    setHistory,
+  } = useContext(GameContext);
 
   function handleClick() {
+    if (squares[index]) return;
+    if (whoIsWinner) return;
+
     const newSquares = [...squares];
-    newSquares[index] = 'X';
+    newSquares[index] = isXNext ? 'X' : 'O';
     setSquares(newSquares);
+    setIsXNext(!isXNext);
+
+    setHistory([
+      ...history,
+      {
+        squares: [...squares],
+        isXNext: !isXNext,
+        whoIsWinner,
+      },
+    ]);
   }
 
   return (
@@ -17,3 +38,12 @@ export default function Square({ value, index }) {
     </button>
   );
 }
+
+Square.defaultProps = {
+  value: null,
+};
+
+Square.protoTypes = {
+  value: t.string,
+  index: t.number.isRequired,
+};
