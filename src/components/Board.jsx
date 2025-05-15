@@ -11,15 +11,18 @@ import Winner from './Winner';
 import History from './History';
 
 export default function Board() {
-  const { squares, setWhoIsWinner, history } = useContext(GameContext);
+  const {
+    state: { squares, history },
+    dispatch,
+  } = useContext(GameContext);
 
   useEffect(() => {
     const winner = calculateWinner(squares);
 
     if (winner) {
-      setWhoIsWinner(winner);
+      dispatch({ type: 'UPDATE_WINNER', payload: winner });
     }
-  }, [setWhoIsWinner, squares]);
+  }, [dispatch, history, squares]);
 
   return (
     <div className="board-container">
