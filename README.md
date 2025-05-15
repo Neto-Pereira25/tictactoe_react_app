@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# 🧠 Jogo da Velha (Tic Tac Toe) com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de Jogo da Velha desenvolvido em React, utilizando gerenciamento de estado com `useReducer` e `Context API`. A aplicação possui funcionalidades como histórico de jogadas, controle de jogador atual, e detecção automática de vencedor.
 
-## Available Scripts
+![React Tic Tac Toe](https://img.shields.io/badge/React-19.x-blue?style=flat&logo=react)  
+![License](https://img.shields.io/badge/license-MIT-green)  
+![Status](https://img.shields.io/badge/status-finalizado-blue)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎮 Demonstração
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Interface simples e responsiva para duas pessoas jogarem alternadamente.  
+> O jogo mostra de quem é a vez, detecta o vencedor automaticamente, e permite reiniciar ou voltar para jogadas anteriores.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Tecnologias utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React 19](https://react.dev/)
+- [Context API + useReducer](https://react.dev/learn/scaling-up-with-reducer-and-context)
+- [PropTypes](https://www.npmjs.com/package/prop-types)
+- [UUID](https://www.npmjs.com/package/uuid) (para chaves únicas em listas)
+- ESLint + Prettier (padronização de código)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Estrutura de diretórios
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+src/
+│
+├── components/        # Componentes reutilizáveis (Board, Square, Reset, etc.)
+├── contexts/          # Context API e reducer de estado do jogo
+├── pages/             # Página principal do jogo
+├── utils/             # Funções utilitárias (ex: cálculo do vencedor)
+├── index.js           # Ponto de entrada da aplicação
+├── index.css          # Estilos globais
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+⚙️ Como rodar o projeto localmente
+Pré-requisitos
+Node.js (versão 18 ou superior recomendada)
 
-### `npm run eject`
+npm ou yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Passos:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/project-tictactoe-app.git
+cd project-tictactoe-app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Instale as dependências
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Inicie o servidor de desenvolvimento
+npm start
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A aplicação será executada em http://localhost:3000.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🧠 Funcionalidades
+✅ Alternância entre jogadores (X e O)
+✅ Detecção de vencedor
+✅ Reset de partida
+✅ Histórico de jogadas com possibilidade de retorno
+✅ Layout responsivo
 
-### Code Splitting
+🧼 Padrões de Código
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Linting com ESLint
+- Formatação com Prettier
+- Configuração personalizada de ESLint e Prettier em eslint.config.js e .prettierrc.js
 
-### Analyzing the Bundle Size
+🙌 Contribuição
+Contribuições são bem-vindas!
+Sinta-se à vontade para abrir issues ou pull requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✉️ Contato
+Desenvolvido por [José Neto] — contato: devneto203@gmail.com
