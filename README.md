@@ -48,8 +48,8 @@ Passos:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/project-tictactoe-app.git
-cd project-tictactoe-app
+git clone git@github.com:Neto-Pereira25/tictactoe_react_app.git
+cd tictactoe_react_app
 
 # Instale as dependências
 npm install
@@ -59,7 +59,7 @@ npm start
 
 ```
 
-A aplicação será executada em http://localhost:3000.
+## A aplicação será executada em http://localhost:3000.
 
 🧠 Funcionalidades
 ✅ Alternância entre jogadores (X e O)
@@ -68,15 +68,21 @@ A aplicação será executada em http://localhost:3000.
 ✅ Histórico de jogadas com possibilidade de retorno
 ✅ Layout responsivo
 
+---
+
 🧼 Padrões de Código
 
 - Linting com ESLint
 - Formatação com Prettier
-- Configuração personalizada de ESLint e Prettier em eslint.config.js e .prettierrc.js
+- Configuração personalizada de ESLint e Prettier em `eslint.config.js` e `.prettierrc.js`
+
+---
 
 🙌 Contribuição
 Contribuições são bem-vindas!
 Sinta-se à vontade para abrir issues ou pull requests.
+
+---
 
 ✉️ Contato
 Desenvolvido por [José Neto] — contato: devneto203@gmail.com
