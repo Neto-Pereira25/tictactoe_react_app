@@ -1,11 +1,6 @@
 # 🧠 Jogo da Velha (Tic Tac Toe) com React
 
 Este é um projeto de Jogo da Velha desenvolvido em React, utilizando gerenciamento de estado com `useReducer` e `Context API`. A aplicação possui funcionalidades como histórico de jogadas, controle de jogador atual, e detecção automática de vencedor.
-
-![React Tic Tac Toe](https://img.shields.io/badge/React-19.x-blue?style=flat&logo=react)  
-![License](https://img.shields.io/badge/license-MIT-green)  
-![Status](https://img.shields.io/badge/status-finalizado-blue)
-
 ---
 
 ## 🎮 Demonstração
@@ -38,7 +33,7 @@ src/
 ├── index.css          # Estilos globais
 ```
 
-⚙️ Como rodar o projeto localmente
+## ⚙️ Como rodar o projeto localmente
 Pré-requisitos
 Node.js (versão 18 ou superior recomendada)
 
@@ -58,31 +53,28 @@ npm install
 npm start
 
 ```
+A aplicação será executada em http://localhost:3000.
 
-## A aplicação será executada em http://localhost:3000.
-
-🧠 Funcionalidades
+## 🧠 Funcionalidades
 ✅ Alternância entre jogadores (X e O)
+
 ✅ Detecção de vencedor
+
 ✅ Reset de partida
+
 ✅ Histórico de jogadas com possibilidade de retorno
+
 ✅ Layout responsivo
 
----
-
-🧼 Padrões de Código
+## 🧼 Padrões de Código
 
 - Linting com ESLint
 - Formatação com Prettier
 - Configuração personalizada de ESLint e Prettier em `eslint.config.js` e `.prettierrc.js`
 
----
-
-🙌 Contribuição
+## 🙌 Contribuição
 Contribuições são bem-vindas!
 Sinta-se à vontade para abrir issues ou pull requests.
 
----
-
-✉️ Contato
+## ✉️ Contato
 Desenvolvido por [José Neto] — contato: devneto203@gmail.com
